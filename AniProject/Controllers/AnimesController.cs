@@ -15,9 +15,9 @@ namespace AniProject.Controllers
             _animeRepository = repository;
         }
 
-        public IActionResult Index(DataContext data)
+        public IActionResult Index()
         {
-            IEnumerable<Anime> animes = data.Animes;
+            IEnumerable<Anime> animes = _animeRepository.Animes;
             return View(animes);
         }
     }

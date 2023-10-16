@@ -16,3 +16,35 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.anime-card{
+    background: red;
+    width: 200px;
+    height:300px;
+    padding: 5px
+     
+}
+
+.anime-photo {
+    background: blue;
+    height:50%
+}
+
+.data {
+    background: gray;
+
+}
+
+.anime-name {
+    background: pink;
+    height: 30%;
+    font-size: 1.5em
+
+}
+
+.anime-description {
+    background: brown;
+    height: 20%;
+    width:100%;
+    overflow:hidden
+}
