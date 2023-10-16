@@ -18,16 +18,31 @@ body {
 }
 
 .anime-card{
+    position: relative;
     background: red;
+    margin: 5px;
     width: 200px;
     height:300px;
-    padding: 5px
-     
+    padding: 5px;     
+
 }
 
+.edit {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.anime-card:hover > .edit{
+    display: grid;
+    background:white;
+}
 .anime-photo {
     background: blue;
-    height:50%
+    height: 50%
 }
 
 .data {
@@ -38,13 +53,20 @@ body {
 .anime-name {
     background: pink;
     height: 30%;
-    font-size: 1.5em
-
+    font-size: 1.5em;
+    margin: 10px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .anime-description {
     background: brown;
-    height: 20%;
-    width:100%;
-    overflow:hidden
+    overflow: hidden;
+    width: 100%;
+    height:95px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
