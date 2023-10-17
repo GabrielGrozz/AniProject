@@ -19,6 +19,11 @@ namespace AniProject.Models
         [Display(Name = "Descrição")]
         public string AnimeDescription  { get; set; }
 
+        [Required(ErrorMessage ="Informe a imagem do anime")]
+        [StringLength(200, ErrorMessage = "A descrição do anime deve ter no máximo 200 caracteres")]
+        [Display(Name ="Imagem do anime")]
+        public string AnimeImage { get; set; }
+
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
     }
