@@ -33,7 +33,7 @@
             @foreach (var item in Model)
             {
                 <div class="anime-card">
-                    <div class="anime-photo"> <img src="https://th.bing.com/th/id/OIP.OkRQfBBMx5HuMOTBro7tGwHaEM?pid=ImgDet&rs=1" width="190" height="145" /></div>
+                    <div class="anime-photo"> <img src="@item.AnimeImage" width="190" height="145" /></div>
                     <div class="anime-data">
                         <h1 class="anime-name">@item.AnimeName</h1>
                         <p class="anime-description">@item.AnimeDescription/p>
