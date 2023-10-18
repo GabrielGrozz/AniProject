@@ -57,7 +57,7 @@ namespace AniProject.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("AnimeId,AnimeName,AnimeDescription,CategoryId")] Anime anime)
+        public async Task<IActionResult> Create([Bind("AnimeId,AnimeName,AnimeDescription,AnimeImage,CategoryId")] Anime anime)
         {
             if (ModelState.IsValid)
             {

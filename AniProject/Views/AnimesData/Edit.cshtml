@@ -39,6 +39,7 @@
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
+        <a asp-action="Delete" asp-route-id="@Model.AnimeId">Delete</a>
     </div>
 </div>
 
@@ -47,5 +48,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

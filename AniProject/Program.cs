@@ -1,6 +1,7 @@
 using AniProject.Context;
 using AniProject.Repository;
 using AniProject.Repository.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,11 @@ builder.Services.AddControllersWithViews();
 //configuracao para usarmos o sqlServer
 builder.Services.AddDbContext<DataContext>
     (options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+//configuracao do identity
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<DataContext>()
+    .AddDefaultTokenProviders();
 
 //usando a injecao de dependencia nativa do net6 para termos acessoa o contexto do nosso projeto
 builder.Services.AddTransient<IAnimesRepository, AnimesRepository>();
@@ -30,6 +36,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.UseAuthorization();
 
