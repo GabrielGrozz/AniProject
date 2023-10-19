@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AniProject.Controllers
 {
-    public class AccountController1 : Controller
+    public class AccountController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _singInManager;
 
-        public AccountController1(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
+        public AccountController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
         {
             _userManager = userManager;
             _singInManager = signInManager;
