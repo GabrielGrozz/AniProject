@@ -1,0 +1,17 @@
+﻿@model LoginViewModel
+
+<h1>Register</h1>
+<div>
+    <form asp-controller="Account" asp-action="Register" method="post">
+        <label asp-for="UserName"></label>
+        <input asp-for=UserName class="form-control"/>
+        <span asp-validation-for="UserName"></span>
+
+        <label asp-for=Password></label>
+        <input asp-for="Password" class="form-control"/>
+        <span asp-validation-for="Password"></span>
+
+        <input type="submit" class="btn btn-success" value="registrar"/>
+    </form>
+</div>
+

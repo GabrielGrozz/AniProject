@@ -1,6 +1,7 @@
 ﻿using AniProject.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.View;
 
 namespace AniProject.Controllers
 {
@@ -50,15 +51,43 @@ namespace AniProject.Controllers
                     {
                         return RedirectToAction("Index", "Home");
                     }
-                        return Redirect(loginVm.ReturnUrl);
+                    return Redirect(loginVm.ReturnUrl);
                 }
-                
+
             };
 
             //caso o usuario seja null iremos retornar um erro
             ModelState.AddModelError("", "Error to try login in");
             return View(loginVm);
 
+        }
+
+        [HttpGet]
+
+        public IActionResult Register()
+        {
+            //irá apenas retornar a view 
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Register(LoginViewModel loginVm)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = new IdentityUser { UserName = loginVm.UserName };
+                var result = await _userManager.CreateAsync(user, loginVm.Password);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Login", "Account");
+                }
+                else
+                {
+                    this.ModelState.AddModelError("Registro", "Falha ao tentar registrar usuário");
+                }
+            }
+            return View(loginVm);
         }
     }
 
