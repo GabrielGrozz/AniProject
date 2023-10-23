@@ -46,6 +46,7 @@ namespace AniProject.Controllers
                 var result = await _singInManager.PasswordSignInAsync(user, loginVm.Password, false, false);
                 if (result.Succeeded)
                 {
+                   TempData["login"] = "login realizado com sucesso";
                     //caso o login ocorra com sucesso iremos redirecionar o usuario para a home caso ele não tenha uma url de retorno
                     if (String.IsNullOrEmpty(loginVm.ReturnUrl))
                     {
@@ -60,6 +61,14 @@ namespace AniProject.Controllers
             ModelState.AddModelError("", "Error to try login in");
             return View(loginVm);
 
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            TempData["login"] = "Você realizou o Logout";
+            await _singInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
         }
 
         [HttpGet]

@@ -1,6 +1,7 @@
 ﻿@model LoginViewModel
 
 <h1>Register</h1>
+<div asp-validation-summary="All" class="text-danger"></div>
 <div>
     <form asp-controller="Account" asp-action="Register" method="post">
         <label asp-for="UserName"></label>
