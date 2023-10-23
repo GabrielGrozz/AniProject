@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AniProject.Context;
 using AniProject.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AniProject.Controllers
 {
+    [Authorize]
     public class AnimesDataController : Controller
     {
         private readonly DataContext _context;
