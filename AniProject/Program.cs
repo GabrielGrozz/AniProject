@@ -1,8 +1,10 @@
 using AniProject.Context;
 using AniProject.Repository;
 using AniProject.Repository.Interfaces;
+using AniProject.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Drawing.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +23,15 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>()
 //usando a injecao de dependencia nativa do net6 para termos acessoa o contexto do nosso projeto
 builder.Services.AddTransient<IAnimesRepository, AnimesRepository>();
 builder.Services.AddTransient<ICategoriesRepository, CategoriesRepository>();
+builder.Services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
+
+builder.Services.AddAuthorization(op =>
+{
+    op.AddPolicy("Admin", policy =>
+    {
+        policy.RequireRole("Admin");
+    });
+});
 
 var app = builder.Build();
 
@@ -36,6 +47,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+CreateUserProfile(app);
 
 app.UseAuthentication();
 app.UseAuthorization();
@@ -55,3 +68,15 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+
+void CreateUserProfile(WebApplication app)
+{
+    var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
+    using (var scoped = scopedFactory.CreateScope())
+    {
+        var service = scoped.ServiceProvider.GetService<ISeedUserRoleInitial>();
+        service.SeedRoles();
+        service.SeedUsers();
+    }
+}

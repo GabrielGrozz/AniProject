@@ -1077,3 +1077,4 @@ D:\dev\C#\AniProject\AniProject\obj\Debug\net6.0\AniProject.pdb
 D:\dev\C#\AniProject\AniProject\obj\Debug\net6.0\AniProject.genruntimeconfig.cache
 D:\dev\C#\AniProject\AniProject\obj\Debug\net6.0\ref\AniProject.dll
 D:\dev\C#\AniProject\AniProject\bin\Debug\net6.0\bundleconfig.json
+C:\Users\Usuário\source\repos\AniProject\AniProject\AniProject\bin\Debug\net6.0\bundleconfig.json
