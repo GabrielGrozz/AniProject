@@ -68,7 +68,7 @@ namespace AniProject.Controllers
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
-            TempData["login"] = "Você realizou o Logout";0
+            TempData["login"] = "Você realizou o Logout";
             await _singInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
@@ -100,6 +100,12 @@ namespace AniProject.Controllers
                 }
             }
             return View(loginVm);
+        }
+
+
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
 
