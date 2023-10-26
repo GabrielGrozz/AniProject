@@ -6,6 +6,10 @@
 
 <h1>Index</h1>
 
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
 <div class="row col-sm-2 col-md-8 col-lg-12 justify-content-center">
     @foreach (var item in Model)
     {
@@ -16,6 +20,11 @@
                 <div class="anime-data">
                     <h1 class="anime-name">@item.AnimeName</h1>
                     <p class="anime-description">@item.AnimeDescription/p>
+                </div>
+                <div class="edit">
+                    <a asp-action="Edit" asp-route-id="@item.AnimeId">
+                        <img src="/images/pen.png" width="30">
+                    </a>
                 </div>
             </a>
         </div>

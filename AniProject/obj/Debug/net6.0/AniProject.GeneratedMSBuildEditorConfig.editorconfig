@@ -9,89 +9,97 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AniProject
 build_property.RootNamespace = AniProject
-build_property.ProjectDir = D:\dev\C#\AniProject\AniProject\
+build_property.ProjectDir = C:\Users\Usuário\source\repos\personalProject\AniProject\AniProject\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\dev\C#\AniProject\AniProject
+build_property.MSBuildProjectDirectory = C:\Users\Usuário\source\repos\personalProject\AniProject\AniProject
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/dev/C\#/AniProject/AniProject/Areas/Admin/Views/Admin/Index.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Areas/Admin/Views/AdminAnimesData/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5BbmltZXNEYXRhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Areas/Admin/Views/AdminAnimesData/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5BbmltZXNEYXRhXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Areas/Admin/Views/AdminAnimesData/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5BbmltZXNEYXRhXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Areas/Admin/Views/AdminAnimesData/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5BbmltZXNEYXRhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Areas/Admin/Views/AdminAnimesData/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5BbmltZXNEYXRhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Areas/Admin/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Areas/Admin/Views/Shared/_Layout.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Views/Account/AccessDenied.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Views/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Views/Account/Login.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Views/Account/Register.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Views/AnimesData/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWVzRGF0YVxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/dev/C\#/AniProject/AniProject/Views/AnimesData/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWVzRGF0YVxEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/dev/C\#/AniProject/AniProject/Views/AnimesData/Details.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Views/AnimesData/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWVzRGF0YVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Views/AnimesData/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWVzRGF0YVxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/dev/C\#/AniProject/AniProject/Views/AnimesData/Index.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Views/AnimesData/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWVzRGF0YVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Views/Home/Index.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Views/Home/Privacy.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Views/PartialViews/_LoginPartial.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Views/PartialViews/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdzXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Views/Shared/Error.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Views/_ViewImports.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Views/_ViewStart.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/C\#/AniProject/AniProject/Views/Shared/_Layout.cshtml]
+[C:/Users/Usuário/source/repos/personalProject/AniProject/AniProject/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0flvzt7a0e
